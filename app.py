@@ -738,7 +738,7 @@ def main() -> None:
         if not pregunta_usuario.strip():
             st.warning("Escribe una pregunta para que pueda ayudarte.")
         else:
-            with st.spinner("Pensando..."):
+            with st.spinner("Dame un momento, estoy preparando tu respuesta ..."):
                 try:
                     if usar_receta:
                         respuesta = preguntar_sobre_receta(
