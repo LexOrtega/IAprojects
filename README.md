@@ -13,6 +13,10 @@ Las porciones son determinadas por un especialista, un nutriologo que asigna una
 
 Esta informacion se carga a la aplicacion para posteriormente ser usada en las consultas que haga el usuario.
 
-La funcion principal se llama pregunta(pregunta, modelo) y recibe como parametros de entrada la pregunta del usuario y el modelo que desea usar, este tiene uno por default asi que puede no ser enviado y aun asi funcionaria.
+La funcion principal se llama pregunta y recibe como parametros de entrada principales la pregunta del usuario y el modelo que desea usar, (entre otros) este tiene uno por default asi que puede no ser enviado y aun asi funcionaria.
 
 El front de la aplicacion se esta desplegando usando streamlit para que este disponible a quien acceda a la url, sin embargo, tambien la tengo en colab, usando gradle, aunque la interfaz es mas simple.
+
+
+Requiere el uso de un token de groq que se carga en esta variable:
+GROQ_API_KEY = "token..."
