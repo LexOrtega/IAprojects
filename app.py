@@ -75,6 +75,15 @@ def cargar_css(hero_data_uri: str) -> None:
         [data-testid="stSidebar"] {{
             background: #101713;
             border-right: 1px solid rgba(255, 255, 255, 0.08);
+            width: 40vw !important;
+            min-width: 380px !important;
+            max-width: 520px !important;
+        }}
+
+        [data-testid="stSidebar"] > div:first-child {{
+            width: 40vw !important;
+            min-width: 380px !important;
+            max-width: 520px !important;
         }}
 
         [data-testid="stSidebar"] * {{
@@ -195,6 +204,13 @@ def cargar_css(hero_data_uri: str) -> None:
         }}
 
         @media (max-width: 760px) {{
+            [data-testid="stSidebar"],
+            [data-testid="stSidebar"] > div:first-child {{
+                width: 100vw !important;
+                min-width: 0 !important;
+                max-width: none !important;
+            }}
+
             .hero {{
                 padding: 30px 24px 230px;
             }}
